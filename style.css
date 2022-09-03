@@ -1,0 +1,197 @@
+﻿:root {
+    --bg-color: hsl(49 37% 94%);
+    --typewriterSpeed: 2.5s;
+    --typewriterCharacters: 21;
+}
+
+body {
+    background: var(--bg-color);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    margin:0;
+    padding:0;
+    
+}
+
+.highlight-title {
+    background-image: linear-gradient(to right, #F27121cc, #E94057cc, #8A2387cc);
+    border-radius: 20px 6px;
+    padding: 3px 6px;
+}
+.hightlight {
+    border-radius: 1em 0 1em 0;
+    background-image: linear-gradient( -100deg, rgba(255, 224, 0, 0.2), rgba(255, 224, 0, 0.7) 95%, rgba(255, 224, 0, 0.1) );
+}
+
+.hightlight2 {
+    border-radius: 0.1em 0 0.1em 0;
+    background-image: linear-gradient( -100deg, rgba(255, 224, 0, 0.2), rgba(255, 224, 0, 0.7) 95%, rgba(255, 224, 0, 0.1) );
+}
+
+h1, p {
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.container {
+    min-height: 100vh;
+    place-content: center;
+    text-align: center;
+    margin-left:2vw ;
+    margin-right:2vw;
+
+}
+.page1 {
+    padding-top:5vh;
+    margin: 0;
+    font-family: "Source sans-serif Pro",sans-serif;
+    display: grid;
+    background: var(--bg-color);
+}
+
+.page1-text {
+    font-size: clamp(1rem, 3vw + 2rem, 5rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+}
+
+    .page1-text::before,
+    .page1-text::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .page1-text::before {
+        background: var(--bg-color);
+        animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+    }
+
+    .page1-text::after {
+        width: 0.08em;
+        background: black;
+        animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(2,start) infinite;
+    }
+
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+
+@keyframes blink {
+    20% {
+        background: black;
+    }
+
+    25% {
+        background: transparent;
+    }
+
+    75% {
+        background: transparent;
+    }
+
+    80% {
+        background: black;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.description {
+    padding-top: 20vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    gap: 2%;
+}
+
+.descriptionlist {
+    flex: 1;
+    background-color: moccasin;
+    border-radius: 25px;
+}
+
+.page2 {
+    text-align: left;
+    float: left;
+    min-height: 50vh;
+}
+
+.page2title {
+
+}
+
+.page2content {
+    display: flex;
+}
+.selfie {
+}
+
+.safluke_pic {
+    width: 15em;
+    float: left;
+    flex:1;
+    padding-right:20px;
+}
+
+
+.selfie-text {
+    float: left;
+    flex:1;
+    font-size:1.5rem;
+    max-width:50vw;
+}
+
+.page3title {
+    text-align:left;
+}
+
+.page3{
+
+}
+
+.project-layout {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+
+.project {
+    background-color: moccasin;
+    text-align: center;
+    justify-content: space-between;
+    min-width: 20em;
+    min-height: 20em;
+    border-radius: 25px;
+    flex: 1;
+    
+}
+
+.project-title {
+    padding-bottom: 10px;
+    margin-bottom:0;
+}
+
+.project-title-text {
+    margin-top: 4%;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 0;
+}
