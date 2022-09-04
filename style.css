@@ -1,20 +1,24 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 :root {
-    --bg-color: hsl(49 37% 94%);
+    --bg-color: #FFFFFF;
+    --style1-color: #FFFFFF;
+    --style2-color: #FFFFFF;
+    --font-color: #4E4E4E;
     --typewriterSpeed: 2.5s;
     --typewriterCharacters: 21;
     --font: #414141;
-    --underline:black;
+    --underline: black;
 }
+
 
 body {
     background: var(--bg-color);
+    color: var(--font-color);
     display: grid;
     place-content: center;
     min-height: 100vh;
-    margin:0;
-    padding:0;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .highlight-title {
@@ -27,20 +31,37 @@ body {
     background-image: linear-gradient( -100deg, rgba(255, 224, 0, 0.2), rgba(255, 224, 0, 0.7) 95%, rgba(255, 224, 0, 0.1) );
 }
 
+.highlight-red {
+    border-radius: 1em 0 1em 0;
+    background-image: linear-gradient( -100deg, rgba(255, 20, 0, 0.2), rgba(255, 20, 0, 0.7) 95%, rgba(255, 20, 0, 0.1) );
+}
+
+.highlight-green {
+    border-radius: 1em 0 1em 0;
+    background-image: linear-gradient( -100deg, rgba(0, 255, 20, 0.2), rgba(0, 255, 20, 0.7) 95%, rgba(0, 255, 20, 0.1) );
+}
+
 .hightlight2 {
     border-radius: 0.1em 0 0.1em 0;
     background-image: linear-gradient( -100deg, rgba(255, 224, 0, 0.2), rgba(255, 224, 0, 0.7) 95%, rgba(255, 224, 0, 0.1) );
 }
 
+.border-highlight {
+    border: 4px dashed red;
+    padding: 0.03em 1em;
+}
+
 h1, p {
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-family: "Roboto Mono"
 }
 
 nav {
+    background: var(--bg-color);
     position: sticky;
     top: 0;
-    background-color: wheat;
     border-radius: 1em 0 1em 0;
+    height: 10vh;
 }
 
 nav .container{
@@ -60,7 +81,7 @@ nav .container ul li {
 nav .container ul li a {
     display: inline-block;
     padding: 10px 20px;
-    color: black;
+    color: var(--font-color);
     text-decoration: none;
     font-family: "Roboto Mono";
     font-size: 24px;
@@ -78,7 +99,6 @@ nav .container ul li.active a {
 }
 
 section {
-    min-height: 100vh;
     place-content: center;
     text-align: center;
     margin-left: 2vw;
@@ -86,7 +106,8 @@ section {
 }
 
 .page1 {
-    padding-top:5vh;
+    min-height: 75vh;
+    padding-top: 0vh;
     margin: 0;
     font-family: "Source sans-serif Pro",sans-serif;
     display: grid;
@@ -173,9 +194,11 @@ hr {
     transition: width 450ms ease-out;
 }
 
+.page1a {
+    height: 10vh;
+}
 
 .description {
-    padding-top: 20vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
     display: flex;
@@ -184,7 +207,7 @@ hr {
 
 .descriptionlist {
     flex: 1;
-    background-color: moccasin;
+    background-color: var(--style2-color);
     border-radius: 25px;
 }
 
@@ -194,12 +217,9 @@ hr {
     min-height: 50vh;
 }
 
-.page2title {
-
-}
-
 .page2content {
     display: flex;
+
 }
 .selfie {
 }
@@ -219,24 +239,32 @@ hr {
     max-width:50vw;
 }
 
-.page3title {
+.page4title,.page5title {
     text-align:left;
 }
 
-.page3{
+.page1title, .page2title, .page3title, .page4title, .page5title{
+   color:linen;
+}
 
+.page2title, .page4title, .page5title {
+    margin-bottom: 10vh;
+    margin-top:10vh;
+}
+
+.page4 {
 }
 
 .project-layout {
     padding-top: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 40px;
     
 }
 
 .project {
-    background-color: moccasin;
+    background-color: var(--style2-color);
     text-align: center;
     justify-content: space-between;
     min-width: 20em;
@@ -245,6 +273,13 @@ hr {
     flex: 1;
     display: flex;
     flex-direction: column;
+    box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
+    transition: all .2s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.1);
 }
 
 .project-title {
@@ -265,25 +300,104 @@ hr {
 
 .project-footer-row {
     display: flex;
-
+    gap: 0px;
+    
 }
 
-.project-content{
-    flex:1;
-
-}   
-
-.proj-1{
-    background-color:lightgreen;
+.project-content {
+    flex: 1;
+    
 }
+
+.proj-1 {
+    background-color: lightgreen;
+    box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
+    border-radius: 0 0 0 25px;
+}
+
+
 .proj-2 {
-    background-color:aquamarine;
+    background-color: aquamarine;
+    box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
 }
 .proj-3 {
-    background-color:coral;
+    background-color: coral;
+    box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
 }
 .proj-4 {
-    background-color:gainsboro;
+    background-color: gainsboro;
+    box-shadow: 4px 3px 8px 1px #969696;
+    -webkit-box-shadow: 4px 3px 8px 1px #969696;
+    border-radius: 0 0 25px 0;
+}
+
+.page3 {
+    text-align: left;
+}
+
+.skillsTable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    
+}
+
+.skillsTableColumn {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightcoral;
+    text-align: center;
+    margin: 10px 20px 10px;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.skillsTableContent {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 10px;
+    text-align: center;
+    justify-content:center;
+}
+
+.rowEven {
+    background: wheat;
+    border-radius: 25px;
+}
+
+.rowOdd{
+    background-color:lightsalmon;
+    border-radius: 25px;
+}
+
+.page5 {
+    margin-top: 30px;
+    background-color: var(--style2-color);
+    min-height: 25vh;
+
 }
 
 
+.page5content {
+    display: flex;
+    height: 5vh;
+    padding-bottom:10vh;
+   
+}
+
+
+.footerContent {
+    padding-top:10px;
+    flex: 1;
+    height: 20px;
+    filter: invert(10%) sepia(108%) saturate(750%) hue-rotate(355deg) brightness(00%) contrast(55%);
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+.footerContent:hover {
+    transform: scale(1.5);
+}

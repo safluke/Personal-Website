@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&amp;family=Source+Sans+Pro:wght@400&amp;display=swap" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"defer></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/74e453f1c5.js"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js" defer></script>
 
@@ -25,34 +25,34 @@
  -->
 <body>
 
-    <nav>
+    <nav highlight-title>
         <div class="container">
             <ul>
                 <li class="home active"><a href="#home">Home</a></li>
                 <li class="about"><a href="#about">About me</a></li>
-                <li class="skills"><a href="#skills">skills</a></li>
-                <li class="projects"><a href="#projects">projects</a></li>
+                <!--<li class="skills"><a href="#skills">Skills</a></li>-->
+                <li class="projects"><a href="#projects">Projects</a></li>
                 <li class="contactMe"><a href="#contactMe">Contact me</a></li>
             </ul>
         </div>
 
     </nav>
-
     <section id="home" class="page1 container">
+        
         <h1 class="page1-text">Hi I'm Safluke Ahmed.</h1>
         <hr>
+    </section>
+    <section id="home" class="page1a">
         <div class="description">
-            <div class="descriptionlist"> <p>Student </p></div>
-            <div class="descriptionlist"> <p>Chemical Engineer </p></div>
-            <div class="descriptionlist"> <p>Developer </p></div>
+            <div class="descriptionlist "> <p class="highlight-red">Student </p></div>
+            <div class="descriptionlist "> <p class="highlight-green ">Designer</p></div>
+            <div class="descriptionlist "> <p> <span class="border-highlight">Developer</span></p></div>
         </div>
-
     </section>
 
 
-
     <section id="about" class="page2">
-        <h1 class="page2title highlight-title">About me</h1>
+        <h1 class="page2title highlight-title"><span class="">About me</span></h1>
 
         <div class="page2content">
             <div class="selfie">
@@ -75,8 +75,38 @@
         </div>
     </section>
 
-    <section id="projects" class="page3">
-        <h1 class="page3title highlight-title">Projects</h1>
+    <!--
+    <section id="skills" class="page3">
+        <h1 class="page3title highlight-title">Skills Summary</h1>
+
+        <div class="page3content">
+            <div class="skillsTable">
+                <div class="skillsTableColumn"><p>Java</p></div>
+                <div class="skillsTableColumn"><p>Spring Boot</p></div>
+                <div class="skillsTableColumn"><p>MySQL</p></div>
+
+                <div class="skillsTableContent rowEven"><p>CSS</p></div>
+                <div class="skillsTableContent rowEven"><p>HTML</p></div>
+                <div class="skillsTableContent rowEven"><p>JavaScript</p></div>
+
+                <div class="skillsTableContent rowOdd"><p>Python</p></div>
+                <div class="skillsTableContent rowOdd"><p>Web-Scraping</p></div>
+                <div class="skillsTableContent rowOdd"><p>API's'</p></div>
+
+                <div class="skillsTableContent rowEven"><p>RESTful API services</p></div>
+                <div class="skillsTableContent rowEven"><p>Azure</p></div>
+                <div class="skillsTableContent rowEven"><p>Heroku</p></div>
+
+                <div class="skillsTableContent rowOdd"><p>Git</p></div>
+                <div class="skillsTableContent rowOdd"><p>Linux</p></div>
+                <div class="skillsTableContent rowOdd"><p>Kanban</p></div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <section id="projects" class="page4">
+        <h1 class="page4title highlight-title"><span class="">Projects</span></h1>
 
         <div class="project-layout">
             <div class="project">
@@ -89,6 +119,8 @@
                 <div class="project-body">
                     <p>
                         Full-stack application that helps facilitate project management.
+                        Back-end acts as a RESTful API service, allowing full CRUD functionality and entry
+                        into a mySQL database. Front-end made using BootStrap.
 
                     </p>
                 </div>
@@ -98,7 +130,7 @@
                         <div class="project-content proj-1"> <p>Java</p></div>
                         <div class="project-content proj-2"> <p>Spring Boot</p></div>
                         <div class="project-content proj-3"> <p>RESTful API</p></div>
-                        <div class="project-content proj-4"> <p>Javascript</p></div>
+                        <div class="project-content proj-4"> <p>MySQL</p></div>
 
                     </div>
                 </div>
@@ -112,15 +144,20 @@
                 </div>
 
                 <div class="project-body">
+                    <p>
+                        Scrapes Zillow property listings using the DOM with beautiful Soup.
+                        Selenium is used to automate google form responses 
+                        into a CSV format.
+                    </p>
 
                 </div>
 
                 <div class="project-footer">
                     <div class="project-footer-row">
-                        <div class="project-content proj-1"> <p>Java</p></div>
-                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
-                        <div class="project-content proj-3"> <p>Postman</p></div>
-                        <div class="project-content proj-4"> <p>Javascript</p></div>
+                        <div class="project-content proj-1"> <p>Python</p></div>
+                        <div class="project-content proj-2"> <p>Beautiful Soup</p></div>
+                        <div class="project-content proj-3"> <p>Selenium</p></div>
+                        <div class="project-content proj-4"> <p>Web Driver</p></div>
 
                     </div>
                 </div>
@@ -135,15 +172,18 @@
                 </div>
 
                 <div class="project-body">
-                    body
+                    <p>
+                        Flash card app that utilises the concept of active recall to make 
+                        learning easier. Data is saved locally, so you can pick off from
+                        where you left. Topics are customisable.
+                    </p>
                 </div>
 
                 <div class="project-footer">
                     <div class="project-footer-row">
-                        <div class="project-content proj-1"> <p>Java</p></div>
-                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
-                        <div class="project-content proj-3"> <p>Postman</p></div>
-                        <div class="project-content proj-4"> <p>Javascript</p></div>
+                        <div class="project-content proj-1"> <p>Python</p></div>
+                        <div class="project-content proj-2"> <p>TKinter</p></div>
+                        <div class="project-content proj-4"> <p>GUI</p></div>
 
                     </div>
                 </div>
@@ -157,14 +197,17 @@
                 </div>
 
                 <div class="project-body">
+                    <p>
+                        Play against a human or a computer. Made to consolidate
+                        learning of front-end development concepts.
+                    </p>
 
                 </div>
 
                 <div class="project-footer">
                     <div class="project-footer-row">
-                        <div class="project-content proj-1"> <p>Java</p></div>
-                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
-                        <div class="project-content proj-3"> <p>Postman</p></div>
+                        <div class="project-content proj-1"> <p>HTML</p></div>
+                        <div class="project-content proj-2"> <p>CSS</p></div>
                         <div class="project-content proj-4"> <p>Javascript</p></div>
 
                     </div>
@@ -179,15 +222,21 @@
                 </div>
 
                 <div class="project-body">
+                    <p>
+                        Utilises API services to retrieve stock price information. Based
+                        on  a given volatility, will use another API service to gather top
+                        3 pieces of news related to the stock and send an automated Watsapp notification.
+                        PyWhatKit library ammended for specific use.
+                    </p>
 
                 </div>
 
                 <div class="project-footer">
                     <div class="project-footer-row">
-                        <div class="project-content proj-1"> <p>Java</p></div>
-                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
-                        <div class="project-content proj-3"> <p>Postman</p></div>
-                        <div class="project-content proj-4"> <p>Javascript</p></div>
+                        <div class="project-content proj-1"> <p>Python</p></div>
+                        <div class="project-content proj-2"> <p>API</p></div>
+                        <div class="project-content proj-3"> <p>Authentication</p></div>
+                        <div class="project-content proj-4"> <p>Automated Alerts</p></div>
 
                     </div>
                 </div>
@@ -197,21 +246,23 @@
             <div class="project">
                 <div class="project-title">
                     <h1 class="project-title-text hightlight2">
-                        Password Manager
+                        Snake Game
                     </h1>
                 </div>
 
                 <div class="project-body">
+                    <p>
+                        Game created to increase my understanding of Object-Orientated Programming.
+                        Stores the high score locally.
+                    </p>
 
                 </div>
 
                 <div class="project-footer">
                     <div class="project-footer-row">
-                        <div class="project-content proj-1"> <p>Java</p></div>
-                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
-                        <div class="project-content proj-3"> <p>Postman</p></div>
-                        <div class="project-content proj-4"> <p>Javascript</p></div>
-
+                        <div class="project-content proj-1"> <p>Python</p></div>
+                        <div class="project-content proj-3"> <p>Turtle GUI</p></div>
+                        <div class="project-content proj-4"> <p>OOP</p></div>
                     </div>
                 </div>
 
@@ -220,6 +271,21 @@
 
     </section>
 
+    <section id="contactMe" class="page5">
+        <h1 class="page5title highlight-title">Contact me</h1>
+        <div class="page5content">
+            <div class="footerContent">
+                <a href="mailto:saf_2356@outlook.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="footerContent">
+                <a href="https://github.com/safluke" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-3x" aria-hidden="true"></i></a>
+            </div>
+            <div class="footerContent">
+                <a href="https://www.linkedin.com/in/safluke-ahmed" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-3x" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 </html>

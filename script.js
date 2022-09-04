@@ -7,7 +7,7 @@ window.addEventListener('scroll', () => {
     sections.forEach(section => {
         const sectionTop = section.offsetTop //calculate distance from page top to section top
         const sectionHeight = section.clientHeight
-        if (pageYOffset >= sectionTop - 300) {
+        if (pageYOffset >= sectionTop - 400) {
             current = section.getAttribute('id')
         }
     })
