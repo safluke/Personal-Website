@@ -1,7 +1,10 @@
-﻿:root {
+﻿@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+:root {
     --bg-color: hsl(49 37% 94%);
     --typewriterSpeed: 2.5s;
     --typewriterCharacters: 21;
+    --font: #414141;
+    --underline:black;
 }
 
 body {
@@ -33,14 +36,55 @@ h1, p {
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 }
 
-.container {
+nav {
+    position: sticky;
+    top: 0;
+    background-color: wheat;
+    border-radius: 1em 0 1em 0;
+}
+
+nav .container{
+    width:90%;
+    max-width:1000px;
+    margin:0 auto;
+    text-align:center;
+    padding:5px;
+}
+nav .container ul{
+    outline-style:none;
+}
+nav .container ul li {
+    display: inline-block;
+}
+
+nav .container ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto Mono";
+    font-size: 24px;
+    scroll-behavior: smooth;
+}
+
+    nav .container ul li.active {
+        background-color: crimson;
+        border-radius: 1em 0 1em 0;
+        background-image: linear-gradient( -100deg, rgba(255, 224, 0, 0.2), rgba(255, 224, 0, 0.7) 95%, rgba(255, 224, 0, 0.1) );
+        transition: 0.3s ease background-color;
+    }
+nav .container ul li.active a {
+    color: rgb(255, 255, 255);
+}
+
+section {
     min-height: 100vh;
     place-content: center;
     text-align: center;
-    margin-left:2vw ;
-    margin-right:2vw;
-
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
+
 .page1 {
     padding-top:5vh;
     margin: 0;
@@ -55,6 +99,7 @@ h1, p {
     font-family: "Source Code Pro", monospace;
     position: relative;
     width: max-content;
+    transition: all 100ms ease-out;
 }
 
     .page1-text::before,
@@ -109,6 +154,23 @@ h1, p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.page1-text:hover {
+
+}
+
+    .page1-text:hover ~ hr {
+        width: 100%;
+    }
+
+hr {
+    width: 0px;
+    height: 3px;
+    background: var(--underline);
+    border: var(--underline);
+    margin: 0px;
+    transition: width 450ms ease-out;
 }
 
 
@@ -181,7 +243,8 @@ h1, p {
     min-height: 20em;
     border-radius: 25px;
     flex: 1;
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .project-title {
@@ -195,3 +258,32 @@ h1, p {
     margin-left: 10%;
     margin-bottom: 0;
 }
+
+.project-footer {
+
+}
+
+.project-footer-row {
+    display: flex;
+
+}
+
+.project-content{
+    flex:1;
+
+}   
+
+.proj-1{
+    background-color:lightgreen;
+}
+.proj-2 {
+    background-color:aquamarine;
+}
+.proj-3 {
+    background-color:coral;
+}
+.proj-4 {
+    background-color:gainsboro;
+}
+
+

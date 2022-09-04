@@ -6,6 +6,11 @@
     <title>Safluke Ahmed</title>
     <link rel="icon" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&amp;family=Source+Sans+Pro:wght@400&amp;display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"defer></script>
+
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js" defer></script>
 
@@ -16,25 +21,37 @@
      add navbar
     add side scroller
     add links at the bottom
+    add a stack/technology section
  -->
 <body>
 
-    <div class="page1 container">
-        <h1 class="page1-text">Hi I'm Safluke Ahmed.</h1>
+    <nav>
+        <div class="container">
+            <ul>
+                <li class="home active"><a href="#home">Home</a></li>
+                <li class="about"><a href="#about">About me</a></li>
+                <li class="skills"><a href="#skills">skills</a></li>
+                <li class="projects"><a href="#projects">projects</a></li>
+                <li class="contactMe"><a href="#contactMe">Contact me</a></li>
+            </ul>
+        </div>
 
+    </nav>
+
+    <section id="home" class="page1 container">
+        <h1 class="page1-text">Hi I'm Safluke Ahmed.</h1>
+        <hr>
         <div class="description">
             <div class="descriptionlist"> <p>Student </p></div>
             <div class="descriptionlist"> <p>Chemical Engineer </p></div>
             <div class="descriptionlist"> <p>Developer </p></div>
         </div>
 
-    </div>
+    </section>
 
 
 
-
-
-    <div class="page2 container">
+    <section id="about" class="page2">
         <h1 class="page2title highlight-title">About me</h1>
 
         <div class="page2content">
@@ -43,8 +60,8 @@
             </div>
             <div class="selfie-text">
                 <p>
-                    My name is Safluke Ahmed and my experience as a 
-                    <strong>Chemical Engineer</strong> led to my interest in technology and the subsequent enrolment to the 
+                    My name is Safluke Ahmed and my experience as a
+                    <strong>Chemical Engineer</strong> led to my interest in technology and the subsequent enrolment to the
                     <span class="hightlight">
                         <strong> University of Birmingham </strong> for
                         <strong>MSc Computer Science</strong>.
@@ -56,9 +73,9 @@
 
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="page3 container">
+    <section id="projects" class="page3">
         <h1 class="page3title highlight-title">Projects</h1>
 
         <div class="project-layout">
@@ -69,12 +86,66 @@
                     </h1>
                 </div>
 
+                <div class="project-body">
+                    <p>
+                        Full-stack application that helps facilitate project management.
+
+                    </p>
+                </div>
+
+                <div class="project-footer">
+                    <div class="project-footer-row">
+                        <div class="project-content proj-1"> <p>Java</p></div>
+                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
+                        <div class="project-content proj-3"> <p>RESTful API</p></div>
+                        <div class="project-content proj-4"> <p>Javascript</p></div>
+
+                    </div>
+                </div>
             </div>
+
+            <div class="project">
+                <div class="project-title">
+                    <h1 class="project-title-text hightlight2">
+                        Zillow Web Scraping
+                    </h1>
+                </div>
+
+                <div class="project-body">
+
+                </div>
+
+                <div class="project-footer">
+                    <div class="project-footer-row">
+                        <div class="project-content proj-1"> <p>Java</p></div>
+                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
+                        <div class="project-content proj-3"> <p>Postman</p></div>
+                        <div class="project-content proj-4"> <p>Javascript</p></div>
+
+                    </div>
+                </div>
+
+            </div>
+
             <div class="project">
                 <div class="project-title">
                     <h1 class="project-title-text hightlight2">
                         Flash Card Game
                     </h1>
+                </div>
+
+                <div class="project-body">
+                    body
+                </div>
+
+                <div class="project-footer">
+                    <div class="project-footer-row">
+                        <div class="project-content proj-1"> <p>Java</p></div>
+                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
+                        <div class="project-content proj-3"> <p>Postman</p></div>
+                        <div class="project-content proj-4"> <p>Javascript</p></div>
+
+                    </div>
                 </div>
 
             </div>
@@ -85,6 +156,20 @@
                     </h1>
                 </div>
 
+                <div class="project-body">
+
+                </div>
+
+                <div class="project-footer">
+                    <div class="project-footer-row">
+                        <div class="project-content proj-1"> <p>Java</p></div>
+                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
+                        <div class="project-content proj-3"> <p>Postman</p></div>
+                        <div class="project-content proj-4"> <p>Javascript</p></div>
+
+                    </div>
+                </div>
+
             </div>
             <div class="project">
                 <div class="project-title">
@@ -93,15 +178,22 @@
                     </h1>
                 </div>
 
-            </div>
-            <div class="project">
-                <div class="project-title">
-                    <h1 class="project-title-text hightlight2">
-                        Zillow Web Scraping
-                    </h1>
+                <div class="project-body">
+
+                </div>
+
+                <div class="project-footer">
+                    <div class="project-footer-row">
+                        <div class="project-content proj-1"> <p>Java</p></div>
+                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
+                        <div class="project-content proj-3"> <p>Postman</p></div>
+                        <div class="project-content proj-4"> <p>Javascript</p></div>
+
+                    </div>
                 </div>
 
             </div>
+
             <div class="project">
                 <div class="project-title">
                     <h1 class="project-title-text hightlight2">
@@ -109,11 +201,24 @@
                     </h1>
                 </div>
 
+                <div class="project-body">
+
+                </div>
+
+                <div class="project-footer">
+                    <div class="project-footer-row">
+                        <div class="project-content proj-1"> <p>Java</p></div>
+                        <div class="project-content proj-2"> <p>Spring Boot</p></div>
+                        <div class="project-content proj-3"> <p>Postman</p></div>
+                        <div class="project-content proj-4"> <p>Javascript</p></div>
+
+                    </div>
+                </div>
+
             </div>
         </div>
 
-    </div>
-
+    </section>
 
 
 </body>
