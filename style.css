@@ -281,9 +281,55 @@ hr {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
+    perspective:1500px;
     
 }
 
+.project-layout:hover>.card{
+    cursor:pointer;
+}
+
+.card {
+    position: relative;
+    transition: transform 1500ms;
+    transform-style:preserve-3d;
+}
+
+.front {
+    height: 100%;
+    width: 100%;
+    backface-visibility:hidden;
+
+}
+
+.back {
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    transform: rotateY(180deg);
+
+}
+
+.frontFlip{
+    transform:rotateY(180deg);
+}
+
+.backFlip {
+    transform: rotateY(0deg);
+}
+
+.projectVideo{
+    width:100%;
+}
+
+.projectManagementVideo:hover {
+    transform: scale(1.45);
+    position: fixed;
+    left: 50%;
+
+}
 .project {
     background-color: var(--style2-color);
     text-align: center;
@@ -297,6 +343,8 @@ hr {
     box-shadow: 4px 3px 8px 1px #969696;
     -webkit-box-shadow: 4px 3px 8px 1px #969696;
     transition: all .2s ease-in-out;
+    height:100%;
+    width:100%;
 }
 
 .project:hover {
@@ -358,6 +406,7 @@ hr {
     border-radius: 0 0 25px 0;
 }
 
+
 .page3 {
     text-align: left;
 }
@@ -397,6 +446,10 @@ hr {
     border-radius: 25px;
 }
 
+
+
+
+
 .page5 {
     margin-top: 30px;
     background-color: var(--style2-color);
@@ -424,5 +477,5 @@ hr {
 }
 
 .footerContent:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
 }

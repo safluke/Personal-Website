@@ -24,3 +24,19 @@ window.addEventListener('scroll', () => {
 })
 
 AOS.init();
+
+
+const cards = document.querySelectorAll('#card')
+card.addEventListener('click', () => {
+    cards.forEach(card => { 
+    if (card.classList.contains("frontFlip")) {
+        card.classList.remove("frontFlip")
+        card.classList.add("backFlip")
+    } else {
+        card.classList.remove("backFlip")
+        card.classList.add("frontFlip")
+    }
+    })
+})
+
+document.querySelector('#projectManagementVideo').playbackRate = 1.5;
