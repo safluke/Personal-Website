@@ -320,15 +320,16 @@ hr {
     transform: rotateY(0deg);
 }
 
-.projectVideo{
-    width:100%;
+.projectVideoImageleft, .projectVideoImageright{
+    width: 100%;
 }
 
-.projectManagementVideo:hover {
-    transform: scale(1.45);
-    position: fixed;
-    left: 50%;
+.projectVideoImageleft:hover {
+    transform: scale(1.35);
+}
 
+.projectVideoImageright:hover {
+    transform: scale(1.35);
 }
 .project {
     background-color: var(--style2-color);
@@ -348,7 +349,6 @@ hr {
 }
 
 .project:hover {
-    transform: scale(1.1);
 }
 
 .project-title {
