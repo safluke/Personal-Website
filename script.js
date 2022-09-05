@@ -42,6 +42,20 @@ cards.forEach(card => {
 
 })
 
+cards.forEach(card => {
+
+    card.addEventListener('touchstart', () => {
+        if (card.classList.contains("frontFlip")) {
+            card.classList.remove("frontFlip")
+            card.classList.add("backFlip")
+        } else {
+            card.classList.remove("backFlip")
+            card.classList.add("frontFlip")
+        }
+    })
+
+})
+
 
 
 document.querySelector('#projectManagementVideo').playbackRate = 1.5;
