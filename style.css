@@ -63,7 +63,7 @@ h1, p {
 }
 
 .projectPtext {
-    font-size: 1.5vw;
+    font-size: 1.5vw/1.1rem;
 }
 
 nav {
@@ -289,23 +289,37 @@ hr {
 .page4 {
 }
 
-.project-layout {
+.project-layoutDesktop {
     padding-top: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
-    perspective:1500px;
-    
+    perspective: 1500px;
+    width: 80%;
+    margin-left: 10%;
 }
 
-.project-layout:hover>.card{
-    cursor:pointer;
+.project-layoutMobile {
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    perspective: 1500px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.project-layoutDesktop:hover > .card, .project-layoutMobile:hover > .card {
+    cursor: pointer;
 }
 
 .card {
     position: relative;
     transition: transform 1500ms;
-    transform-style:preserve-3d;
+    overflow: visible !important;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+
 }
 
 .front {

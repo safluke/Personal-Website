@@ -3,7 +3,7 @@ const navli = document.querySelectorAll("nav .container ul li")
 
 window.addEventListener('scroll', () => {
     let current = ""
-    console.log(pageYOffset)
+    //console.log(pageYOffset)
     sections.forEach(section => {
         const sectionTop = section.offsetTop //calculate distance from page top to section top
         const sectionHeight = section.clientHeight
@@ -59,3 +59,40 @@ cards.forEach(card => {
 
 
 document.querySelector('#projectManagementVideo').playbackRate = 1.5;
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
+var screenChange=1200
+function reportWindowSize() {
+    
+    const heightOutput = document.querySelector('#height');
+    const widthOutput = window.innerWidth;
+    const project = document.querySelector('#project-layout')
+    console.log(widthOutput)
+
+    if (widthOutput <= screenChange) {
+        project.classList.remove("project-layoutDesktop")
+        project.classList.add("project-layoutMobile")
+    }
+    else {
+        project.classList.add("project-layoutDesktop")
+        project.classList.remove("project-layoutMobile")
+
+    }
+}
+
+window.addEventListener('resize', reportWindowSize);
+
+const project = document.querySelector('#project-layout')
+const widthOutput = window.innerWidth;
+if (widthOutput <= screenChange) {
+    project.classList.remove("project-layoutDesktop")
+    project.classList.add("project-layoutMobile")
+}
+else {
+    project.classList.add("project-layoutDesktop")
+    project.classList.remove("project-layoutMobile")
+
+}
