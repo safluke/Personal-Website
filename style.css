@@ -220,6 +220,12 @@ hr {
     border-radius: 25px;
 }
 
+.descriptionText{
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:1.5em;
+}
+
 .desicons {
     filter: invert(6%) sepia(17%) saturate(7138%) hue-rotate(183deg) brightness(98%) contrast(101%);
     transition: all .2s ease-in-out;
