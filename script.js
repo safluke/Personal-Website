@@ -9,6 +9,10 @@ window.addEventListener('scroll', () => {
         const sectionHeight = section.clientHeight
         if (pageYOffset >= sectionTop - 400) {
             current = section.getAttribute('id')
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                // you're at the bottom of the page
+                current ="contactMe"
+            }
         }
     })
     navli.forEach(li => {

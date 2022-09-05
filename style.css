@@ -112,6 +112,9 @@ section {
     margin-right: 2vw;
 }
 
+.homeImage {
+    background-image: url("images/bg.jpg")
+}
 .page1 {
     min-height: 75vh;
     padding-top: 0vh;
@@ -202,16 +205,13 @@ hr {
 }
 
 .page1a {
-    height: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .description {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
     display: flex;
     gap: 2%;
- 
 }
 
 .descriptionlist {
@@ -232,8 +232,7 @@ hr {
 .page2 {
     
     float: left;
-    min-height: 50vh;
-    
+     
 }
 
 .page2content {
@@ -254,9 +253,10 @@ hr {
 
 .selfie-text {
     float: left;
-    flex:1;
-    font-size:1.5rem;
+    flex: 1;
+    font-size: clamp(0.5rem, 3vw + 0.75rem, 1.3rem);
     max-width:50vw;
+    max-height:80vw;
 }
 
 .page4title,.page5title {
