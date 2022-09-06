@@ -38,11 +38,11 @@ cards.forEach(card => {
         if (card.classList.contains("frontFlip")) {
             card.classList.remove("frontFlip")
             card.classList.add("backFlip")
-            selected.classList.add("flipHide")
+            selected.classList.remove("flipHide")
         } else {
             card.classList.remove("backFlip")
             card.classList.add("frontFlip")
-            selected.classList.remove("flipHide")
+            selected.classList.add("flipHide")
         }
     })
 
