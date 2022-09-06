@@ -337,8 +337,8 @@ hr {
 .front {
     height: 100%;
     width: 100%;
-    backface-visibility:hidden;
-
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
 }
 
 .back {
