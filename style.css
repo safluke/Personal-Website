@@ -297,6 +297,7 @@ hr {
     perspective: 1500px;
     width: 80%;
     margin-left: 10%;
+    overflow: visible !important;
 }
 
 .project-layoutMobile {
@@ -307,6 +308,7 @@ hr {
     perspective: 2000px;
     width: 80%;
     margin-left: 10%;
+    overflow: visible !important;
 }
 
 .project-layoutDesktop:hover > .card, .project-layoutMobile:hover > .card {
@@ -317,7 +319,7 @@ hr {
     position: relative;
     transition: transform 800ms;
     transform-style: preserve-3d;
-
+    overflow: visible !important;
 }
 
 @keyframes turn {
