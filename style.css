@@ -360,7 +360,7 @@ hr {
 }
 
 .flipHide {
-    z-index: -2;
+    visibility:hidden;
 }
 
 .projectVideoImageleft, .projectVideoImageright{
