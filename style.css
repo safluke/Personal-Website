@@ -304,7 +304,7 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 40px;
-    perspective: 1500px;
+    perspective: 2000px;
     width: 80%;
     margin-left: 10%;
 }
@@ -315,11 +315,23 @@ hr {
 
 .card {
     position: relative;
-    transition: transform 1500ms;
-    overflow: visible !important;
+    transition: transform 800ms;
     transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
 
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate3d(1, 0, 0, 0deg);
+    }
+
+    50% {
+        transform: rotate3d(1, 0, 0, 180deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 0, 0, 360deg);
+    }
 }
 
 .front {
