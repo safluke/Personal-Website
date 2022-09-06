@@ -54,7 +54,7 @@ cards.forEach(card => {
 
 cards.forEach(card => {
 
-    card.addEventListener('touchstart', () => {
+    card.addEventListener('touch', () => {
         if (card.classList.contains("frontFlip")) {
             card.classList.remove("frontFlip")
             card.classList.add("backFlip")
