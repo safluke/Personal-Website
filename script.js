@@ -39,14 +39,14 @@ cards.forEach(card => {
         if (card.classList.contains("frontFlip")) {
             card.classList.remove("frontFlip")
             card.classList.add("backFlip")
-            selected[0].classList.add("flipHide")
-            selected[1].classList.remove("flipHide")
+            selected[0].classList.remove("flipHide")
+            selected[1].classList.add("flipHide")
 
         } else {
             card.classList.remove("backFlip")
             card.classList.add("frontFlip")
-            selected[0].classList.remove("flipHide")
-            selected[1].classList.add("flipHide")
+            selected[0].classList.add("flipHide")
+            selected[1].classList.remove("flipHide")
         }
     })
 
@@ -58,14 +58,14 @@ cards.forEach(card => {
         if (card.classList.contains("frontFlip")) {
             card.classList.remove("frontFlip")
             card.classList.add("backFlip")
-            selected[0].classList.add("flipHide")
-            selected[1].classList.remove("flipHide")
+            selected[0].classList.remove("flipHide")
+            selected[1].classList.add("flipHide")
 
         } else {
             card.classList.remove("backFlip")
             card.classList.add("frontFlip")
-            selected[0].classList.remove("flipHide")
-            selected[1].classList.add("flipHide")
+            selected[0].classList.add("flipHide")
+            selected[1].classList.remove("flipHide")
         }
     })
 
