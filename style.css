@@ -348,15 +348,16 @@ hr {
     position: absolute;
     top: 0;
     transform: rotateY(180deg);
-    z-index: 2;
 }
 
-.frontFlip{
-    transform:rotateY(180deg);
+.frontFlip {
+    transform: rotateY(180deg);
+    z-index: -500;
 }
 
 .backFlip {
     transform: rotateY(0deg);
+    z-index: 500;
 }
 
 .projectVideoImageleft, .projectVideoImageright{
