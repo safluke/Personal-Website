@@ -325,9 +325,18 @@ hr {
     color:white;
 }
 
-.page2title, .page4title, .page5title {
+.page2title, .page5title {
     margin-bottom: 10vh;
-    margin-top:10vh;
+    margin-top: 10vh;
+}
+
+.page4title {
+    margin-top: 10vh;
+    margin-bottom: 2.5vh;
+}
+    .projectsTouchInfo {
+    margin-bottom: 7.5vh;
+    text-align: left;
 }
 
 .page4 {
