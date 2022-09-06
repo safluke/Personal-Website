@@ -352,12 +352,15 @@ hr {
 
 .frontFlip {
     transform: rotateY(180deg);
-    z-index: -500;
+    
 }
 
 .backFlip {
     transform: rotateY(0deg);
-    z-index: 500;
+}
+
+.flipHide {
+    z-index: -2;
 }
 
 .projectVideoImageleft, .projectVideoImageright{
