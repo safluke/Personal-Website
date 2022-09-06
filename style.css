@@ -139,18 +139,29 @@ section {
     margin-right: 2vw;
 }
 
+
 .homeImage {
     background-image: url("images/bg.jpg")
 }
 
-#glasses{
+#glasses {
+    height: 40vh;
+    text-align: center;
+    position:relative;
 }
-.glasses{
-    width:25vw;
+
+#glassesInner {
+    position: absolute;
+    bottom:0;
+    left:30vw;
+}
+.glasses {
+    width: 40vw;
+
 }
 
 .page1 {
-    min-height: 40vh;
+    min-height: 35vh;
     padding-top: 0vh;
     margin: 0;
     font-family: "Source sans-serif Pro",sans-serif;
@@ -241,7 +252,8 @@ hr {
 }
 
 .page1a {
-    margin-bottom: 17.5vh;
+    margin-bottom: 10vh;
+    bottom:10vh;
 }
 
 .description {
