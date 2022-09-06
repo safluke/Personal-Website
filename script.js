@@ -52,11 +52,12 @@ cards.forEach(card => {
 
     card.addEventListener('touchend', () => {
         if (card.classList.contains("frontFlip")) {
-            card.classList.remove("frontFlip")
             card.classList.add("backFlip")
+            selected.classList.remove("flipHide")
         } else {
             card.classList.remove("backFlip")
             card.classList.add("frontFlip")
+            selected.classList.add("flipHide")
         }
     })
 
