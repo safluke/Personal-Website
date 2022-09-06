@@ -315,7 +315,7 @@ hr {
 
 .card {
     position: relative;
-    transition: transform 400ms;
+    transition: transform 800ms;
     transform-style: preserve-3d;
 
 }
@@ -324,22 +324,28 @@ hr {
     height: 100%;
     width: 100%;
 
-
+    transform: rotateY(180deg);
 }
 
 .back {
     height: 100%;
     width: 100%;
-
+    transform: rotateY(0deg);
     position: absolute;
     top: 0;
-
 }
 
+.frontFlip {
+    transform: rotateY(180deg);
+    
+}
 
+.backFlip {
+    transform: rotateY(0deg);
+}
 
 .flipHide {
-    visibility:hidden;
+    visibility: hidden;
 }
 
 .projectVideoImageleft, .projectVideoImageright{
