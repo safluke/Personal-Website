@@ -33,16 +33,20 @@ cards.forEach(card => {
 
     card.addEventListener('click', () => {
 
-        const selected = card.querySelector(':scope > div');
+        const selected = card.querySelectorAll(':scope > div');
+        console.log(selected)
 
         if (card.classList.contains("frontFlip")) {
             card.classList.remove("frontFlip")
             card.classList.add("backFlip")
-            selected.classList.remove("flipHide")
+            selected[0].classList.remove("flipHide")
+            selected[1].classList.add("flipHide")
+
         } else {
             card.classList.remove("backFlip")
             card.classList.add("frontFlip")
-            selected.classList.add("flipHide")
+            selected[0].classList.add("flipHide")
+            selected[1].classList.remove("flipHide")
         }
     })
 
@@ -52,12 +56,16 @@ cards.forEach(card => {
 
     card.addEventListener('touchend', () => {
         if (card.classList.contains("frontFlip")) {
+            card.classList.remove("frontFlip")
             card.classList.add("backFlip")
-            selected.classList.remove("flipHide")
+            selected[0].classList.remove("flipHide")
+            selected[1].classList.add("flipHide")
+
         } else {
             card.classList.remove("backFlip")
             card.classList.add("frontFlip")
-            selected.classList.add("flipHide")
+            selected[0].classList.add("flipHide")
+            selected[1].classList.remove("flipHide")
         }
     })
 
