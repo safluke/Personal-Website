@@ -142,13 +142,20 @@ section {
 .homeImage {
     background-image: url("images/bg.jpg")
 }
+
+#glasses{
+}
+.glasses{
+    width:25vw;
+}
+
 .page1 {
-    min-height: 75vh;
+    min-height: 50vh;
     padding-top: 0vh;
     margin: 0;
     font-family: "Source sans-serif Pro",sans-serif;
-    display: grid;
     background: var(--bg-color);
+    display:grid;
 }
 
 .page1-text {
@@ -158,6 +165,8 @@ section {
     position: relative;
     width: max-content;
     transition: all 100ms ease-out;
+    bottom:10vh;
+    
 }
 
     .page1-text::before,
