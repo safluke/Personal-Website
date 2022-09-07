@@ -128,7 +128,7 @@ nav .container ul li a {
     color: var(--font-color);
     text-decoration: none;
     font-family: var(--fontNav);
-    font-size: clamp(1rem, 1rem+20vw , 1.2rem);
+    font-size: 24px;
     scroll-behavior: smooth;
 }
 
