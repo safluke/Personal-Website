@@ -8,6 +8,12 @@
     --typewriterCharacters: 21;
     --font: #414141;
     --underline: black;
+    --fontDescription: "Roboto Mono";
+    --fontNav: "Roboto Mono";
+    --fontP: "Roboto Mono";
+    --fontH1: "Roboto Mono";
+    --fontProjectLinks: 'Montserrat', sans-serif;
+    --fontHome: "Source Code Pro", monospace;
 }
 
 
@@ -57,15 +63,18 @@ body {
  
 }
 
-h1, p {
-    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    font-family: "Roboto Mono"
+h1{
+    font-family: var(--fontH1)
+}
+
+p {
+    font-family: var(--fontP)
 }
 
 .project__links--text {
     margin: 0.6rem 0;
     padding: 2px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fontProjectLinks);
     font-weight: 600;
     background: unset;
     box-shadow: unset;
@@ -86,7 +95,7 @@ a {
 }
 
 .projectPtext {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 nav {
@@ -117,8 +126,8 @@ nav .container ul li a {
     padding: 10px 20px;
     color: var(--font-color);
     text-decoration: none;
-    font-family: "Roboto Mono";
-    font-size: 24px;
+    font-family: var(--fontNav);
+    font-size: clamp(1rem, 1rem+20vw , 1.2rem);
     scroll-behavior: smooth;
 }
 
@@ -172,12 +181,11 @@ section {
 .page1-text {
     font-size: clamp(1rem, 3vw + 2rem, 5rem);
     position: relative;
-    font-family: "Source Code Pro", monospace;
+    font-family: var(--fontHome);
     position: relative;
     width: max-content;
     transition: all 100ms ease-out;
-    bottom:10vh;
-    
+    bottom: 10vh;
 }
 
     .page1-text::before,
@@ -257,7 +265,7 @@ hr {
 }
 
 .description {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: var(--fontDescription);
     display: flex;
     gap: 2%;
 }
@@ -268,11 +276,9 @@ hr {
     border-radius: 25px;
 }
 
-.descriptionText{
-    
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:2.5vw;
-
+.descriptionText {
+    font-family: var(--fontDescription);
+    font-size: 2.5vw;
 }
 
 .desicons {
@@ -293,6 +299,7 @@ hr {
 .page2content {
     display: flex;
     justify-content:center;
+    font-family:var(--fontHome);
 
 }
 .selfie {
@@ -310,6 +317,7 @@ hr {
     float: left;
     flex: 1;
     font-size: clamp(0.5rem, 3vw + 0.75rem, 1.3rem);
+    font-family:var(--fontHome)
     max-width:50vw;
     max-height:80vw;
 }
