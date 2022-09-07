@@ -4,6 +4,7 @@
     --style1-color: #FFFFFF;
     --style2-color: #FFFFFF;
     --font-color: #4E4E4E;
+    --colorFlashBottom:#0077b6 ;
     --typewriterSpeed: 2.5s;
     --typewriterCharacters: 21;
     --font: #414141;
@@ -471,7 +472,7 @@ hr {
 }
 
 .proj-1 {
-    background-color: #0077b6;
+    background-color: var(--colorFlashBottom);
     box-shadow: 4px 3px 8px 1px #969696;
     -webkit-box-shadow: 4px 3px 8px 1px #969696;
     border-radius: 0 0 0 25px;
@@ -479,17 +480,17 @@ hr {
 
 
 .proj-2 {
-    background-color: #0077b6;
+    background-color: var(--colorFlashBottom);
     box-shadow: 4px 3px 8px 1px #969696;
     -webkit-box-shadow: 4px 3px 8px 1px #969696;
 }
 .proj-3 {
-    background-color: #0077b6;
+    background-color: var(--colorFlashBottom);
     box-shadow: 4px 3px 8px 1px #969696;
     -webkit-box-shadow: 4px 3px 8px 1px #969696;
 }
 .proj-4 {
-    background-color: #0077b6;
+    background-color: var(--colorFlashBottom);
     box-shadow: 4px 3px 8px 1px #969696;
     -webkit-box-shadow: 4px 3px 8px 1px #969696;
     border-radius: 0 0 25px 0;
@@ -565,9 +566,16 @@ hr {
     flex: 1;
     height: 20px;
     transition: all .2s ease-in-out;
-    filter: invert(52%) sepia(98%) saturate(7098%) hue-rotate(215deg) brightness(98%) contrast(75%);
+    filter: invert(27%) sepia(89%) saturate(1763%) hue-rotate(179deg) brightness(66%) contrast(101%);
 }
 
 .footerContent:hover {
     transform: scale(1.1);
+}
+
+
+.footerSection {
+    background-color: #0077b6;
+    color: white;
+    margin: 0;
 }
